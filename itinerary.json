@@ -1,0 +1,164 @@
+[
+  {
+    "day": "Day 1",
+    "city": "Munich, Germany",
+    "spots": [
+      {
+        "name": "慕尼黑機場 (MUC)",
+        "type": "transport",
+        "time": "14:00",
+        "trans": "抵達，轉搭 S-Bahn S1/S8",
+        "lat": 48.3537,
+        "lng": 11.7750,
+        "details": { "open": "24h", "price": "S-Bahn 約 €13" }
+      },
+      {
+        "name": "Wombat's City Hostel",
+        "type": "stay",
+        "time": "15:30",
+        "trans": "步行 5 分鐘",
+        "lat": 48.1368,
+        "lng": 11.5585,
+        "details": { "open": "Check-in 14:00", "price": "約 €35/晚" }
+      },
+      {
+        "name": "瑪麗恩廣場 (Marienplatz)",
+        "type": "visit",
+        "time": "17:00",
+        "trans": "步行或地鐵 U3/U6",
+        "lat": 48.1372,
+        "lng": 11.5755,
+        "details": { "open": "24h", "price": "免費" }
+      },
+      {
+        "name": "皇家啤酒屋 (Hofbräuhaus)",
+        "type": "food",
+        "time": "19:00",
+        "trans": "步行 5 分鐘",
+        "lat": 48.1376,
+        "lng": 11.5801,
+        "details": { "open": "11:00 - 00:00", "price": "豬腳+啤酒 約 €25" }
+      }
+    ]
+  },
+  {
+    "day": "Day 2",
+    "city": "Munich, Germany",
+    "spots": [
+      {
+        "name": "寧芬堡宮 (Nymphenburg Palace)",
+        "type": "visit",
+        "time": "09:30",
+        "trans": "Tram 17",
+        "lat": 48.1581,
+        "lng": 11.5033,
+        "details": { "open": "10:00 - 16:00 (冬季)", "price": "套票 €12" }
+      },
+      {
+        "name": "BMW 博物館",
+        "type": "visit",
+        "time": "14:00",
+        "trans": "U-Bahn U3",
+        "lat": 48.1765,
+        "lng": 11.5591,
+        "details": { "open": "10:00 - 18:00 (週一休)", "price": "門票 €10" }
+      }
+    ]
+  },
+  {
+    "day": "Day 3",
+    "city": "Salzburg, Austria",
+    "spots": [
+      {
+        "name": "慕尼黑中央車站",
+        "type": "transport",
+        "time": "09:00",
+        "trans": "RJX 列車前往薩爾斯堡",
+        "lat": 48.1402,
+        "lng": 11.5599,
+        "details": { "open": "", "price": "早鳥票 €19起" }
+      },
+      {
+        "name": "米拉貝爾宮",
+        "type": "visit",
+        "time": "11:30",
+        "trans": "抵達後步行",
+        "lat": 47.8055,
+        "lng": 13.0416,
+        "details": { "open": "08:00 - 18:00", "price": "花園免費" }
+      }
+    ]
+  },
+  {
+    "day": "Day 4",
+    "city": "Hallstatt, Austria",
+    "spots": [
+      {
+        "name": "哈爾施塔特 (Hallstatt)",
+        "type": "visit",
+        "time": "10:00",
+        "trans": "巴士 #150 + 火車 + 渡輪",
+        "lat": 47.5622,
+        "lng": 13.6493,
+        "details": { "open": "全天", "price": "渡輪 €3" }
+      }
+    ]
+  },
+  {
+    "day": "Day 12",
+    "city": "Vienna, Austria",
+    "spots": [
+      {
+        "name": "美泉宮 (Schönbrunn Palace)",
+        "type": "visit",
+        "time": "09:00",
+        "trans": "U-Bahn U4",
+        "lat": 48.1848,
+        "lng": 16.3122,
+        "details": { "open": "08:30 - 17:00", "price": "Imperial Tour €22" }
+      },
+      {
+        "name": "史蒂芬大教堂",
+        "type": "visit",
+        "time": "14:00",
+        "trans": "U-Bahn U1",
+        "lat": 48.2085,
+        "lng": 16.3734,
+        "details": { "open": "06:00 - 22:00", "price": "登塔 €5" }
+      },
+      {
+        "name": "Figlmüller (炸豬排)",
+        "type": "food",
+        "time": "18:00",
+        "trans": "步行 3 分鐘",
+        "lat": 48.2093,
+        "lng": 16.3761,
+        "details": { "open": "11:00 - 22:30", "price": "約 €20 (需預約)" }
+      }
+    ]
+  },
+  {
+    "day": "Day 24",
+    "city": "Budapest, Hungary",
+    "spots": [
+      {
+        "name": "紐約咖啡館 (New York Café)",
+        "type": "food",
+        "time": "09:00",
+        "trans": "Tram 4/6",
+        "lat": 47.4985,
+        "lng": 19.0705,
+        "details": { "open": "08:00 - 24:00", "price": "咖啡 €8 起" }
+      },
+      {
+        "name": "布達佩斯李斯特機場 (BUD)",
+        "type": "transport",
+        "time": "13:00",
+        "trans": "Bus 100E",
+        "lat": 47.4336,
+        "lng": 19.2620,
+        "details": { "open": "", "price": "車票 900 HUF" }
+      }
+    ]
+  }
+]
