@@ -59,8 +59,9 @@
         const getCountry = (city) => {
              const map = {
                 'Munich': '德國', 'Füssen': '德國', 'Dresden': '德國', 'Berlin': '德國',
-                'Salzburg': '奧地利', 'Hallstatt': '奧地利', 'Vienna': '奧地利',
-                'Budapest': '匈牙利', 'Prague': '捷克', 'Cesky Krumlov': '捷克'
+                'Salzburg': '奧地利', 'Hallstatt': '奧地利', 'Vienna': '奧地利', 'Innsbruck': '奧地利', 'Graz': '奧地利',
+                'Budapest': '匈牙利', 'Prague': '捷克', 'Cesky Krumlov': '捷克', 'Ljubljana': '斯洛維尼亞', 'Bratislava': '斯洛伐克',
+                'Lake Bled': '斯洛維尼亞'
             };
             return map[city] || '其他';
         };
@@ -124,7 +125,7 @@
 
                 if (activeDay) {
                     const group = L.featureGroup();
-                    // Fix: activeDay might not be available yet if itineraryDataState is empty, handled by parent component loading state
+                    
                     if (fullItinerary && fullItinerary.length > 0) {
                         const day = fullItinerary.find(d => d.day === activeDay.day);
                         if(day){
@@ -152,8 +153,6 @@
                                         if (isSelected) marker.openPopup();
                                         markersRef.current.push(marker);
                                         group.addLayer(marker);
-                                    } else {
-                                        // Other days dots logic if needed, currently filtering to activeDay for simplicity
                                     }
                                 }
                             });
@@ -187,7 +186,7 @@
                     if (bounds.isValid()) {
                         const targetCenter = bounds.getCenter();
                         const targetZoom = map.getBoundsZoom(bounds) - 0.5;
-                        map.flyTo(targetCenter, targetZoom, { duration: 1.5 });
+                        map.fitBounds(bounds, { padding: [50, 50] }); // Use fitBounds for initial full view
                     }
                 }
             }, [activeDay, activeSpot, fullItinerary]);
@@ -314,9 +313,11 @@
             const [activeSpot, setActiveSpot] = useState(null);
             const [isHeaderExpanded, setIsHeaderExpanded] = useState(false);
 
-            // Fetch Data
+            // Fetch Data with Cache Buster
             useEffect(() => {
-                fetch('./itinerary.json')
+                // *** 這裡是修改的關鍵：加入了 ?v= (時間戳) 參數來避免瀏覽器快取 ***
+                const cacheBuster = new Date().getTime();
+                fetch(`./itinerary.json?v=${cacheBuster}`)
                     .then(response => {
                         if (!response.ok) {
                             throw new Error(`HTTP error! status: ${response.status}`);
@@ -375,7 +376,7 @@
             }, [activeDayId]);
             
             if (loading) return <div className="h-full w-full flex items-center justify-center text-gray-500 bg-gray-50 flex-col"><i className="fas fa-spinner fa-spin text-4xl mb-3 text-blue-500"></i><p>載入行程中...</p></div>;
-            if (error) return <div className="h-full w-full flex items-center justify-center text-red-500 bg-gray-50 p-10 text-center"><p>載入失敗: {error}<br/>請確認使用 Local Server 或 GitHub Pages 開啟</p></div>;
+            if (error) return <div className="h-full w-full flex items-center justify-center text-red-500 bg-gray-50 p-10 text-center"><p>載入失敗: {error}<br/>請確認檔案 `itinerary.json` 存在且格式正確，並使用 Server 模式開啟。</p></div>;
 
             return (
                 <div className="flex flex-col md:flex-row h-screen w-full">
