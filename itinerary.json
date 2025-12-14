@@ -2,404 +2,654 @@
     {
         "day": 1,
         "date": "02/07 (六)",
-        "title": "抵達慕尼黑 | 巴伐利亞首府初探",
-        "city": "Munich",
-        "coordinates": [48.1351, 11.5820],
-        "summary": "抵達慕尼黑機場 (MUC)，前往市區辦理入住，適應時差並享用晚餐。",
-        "tickets": "購買機場城市快鐵票 (S-Bahn) 或 MVV Day Ticket。",
-        "notes": "冬季日落約 17:15，建議早點 check-in。準備好保暖衣物。",
+        "title": "抵達布達佩斯 | 多瑙河明珠初印象",
+        "city": "Budapest",
+        "coordinates": [47.485, 19.076],
+        "summary": "抵達布達佩斯機場 (BUD)，搭乘機場巴士進入市區，傍晚在多瑙河邊散步。",
+        "tickets": "購買 100E 機場快線車票 (~€5)，市區交通購買 72 小時券。",
+        "notes": "匈牙利週六人潮多，機場快線人多，請看管好行李。換匯建議在市區，而非機場。",
         "spots": [
-            { 
-                "name": "慕尼黑機場 (MUC)", "type": "交通", "time": "14:00 | 抵達", "trans": "S-Bahn S1 或 S8 (約40分)", "lat": 48.3536, "lng": 11.7750,
-                "details": { "open": "24小時", "price": "N/A" }
+            {
+                "name": "布達佩斯李斯特·費倫茨國際機場 (BUD)",
+                "type": "交通", "time": "14:00 | 抵達", "trans": "100E 巴士至 Deák Ferenc tér", "lat": 47.437, "lng": 19.255,
+                "details": { "open": "24小時", "price": "2200 HUF" }
             },
-            { "name": "慕尼黑中央車站周邊", "type": "住宿", "time": "16:00 | Check-in", "trans": "步行", "lat": 48.1404, "lng": 11.5600 },
-            { 
-                "name": "瑪麗恩廣場 (Marienplatz)", "type": "景點", "time": "18:00 | 2小時", "trans": "S-Bahn/U-Bahn 至 Marienplatz", "lat": 48.1372, "lng": 11.5755,
-                "details": { "open": "全天開放", "price": "免費" }
+            { "name": "布達佩斯住宿 (Keleti 車站周邊)", "type": "住宿", "time": "16:00 | Check-in", "trans": "地鐵 M2", "lat": 47.502, "lng": 19.083 },
+            {
+                "name": "國會大廈夜景 (多瑙河對岸)",
+                "type": "景點", "time": "19:00 | 1.5小時", "trans": "地鐵 M2 或 2 號電車", "lat": 47.507, "lng": 19.042,
+                "details": { "open": "全天", "price": "免費" }
             }
         ]
     },
     {
         "day": 2,
         "date": "02/08 (日)",
-        "title": "慕尼黑 | 皇宮與啤酒文化",
-        "city": "Munich",
-        "coordinates": [48.1402, 11.5782],
-        "summary": "參觀慕尼黑王宮，午後漫步英國花園，晚上體驗皇家啤酒屋。",
-        "tickets": "慕尼黑王宮聯票 (Residenz + Treasury)。交通使用 MVV Inner District 日票。",
-        "notes": "週日商店大多關閉，但博物館與餐廳照常營業。",
+        "title": "布達佩斯 | 歷史與溫泉體驗",
+        "city": "Budapest",
+        "coordinates": [47.5186, 19.0822],
+        "summary": "上午參觀宏偉的國會大廈內部，下午體驗世界知名的塞切尼溫泉。",
+        "tickets": "國會大廈門票需提前上網預訂。塞切尼溫泉門票現場購買或線上預訂。",
+        "notes": "國會大廈週日開放，溫泉人多，建議早點前往。記得帶泳衣、拖鞋、毛巾。",
         "spots": [
-            { 
-                "name": "慕尼黑王宮 (Residenz)", "type": "景點", "time": "09:30 | 3小時", "trans": "U-Bahn U3/U6 至 Odeonsplatz", "lat": 48.1402, "lng": 11.5782,
-                "details": { "open": "09:00 - 17:00 (最後入場 16:00)", "price": "€10 (博物館) / €15 (聯票)" }
+            {
+                "name": "匈牙利國會大廈",
+                "type": "景點", "time": "10:00 | 1.5小時", "trans": "地鐵 M2 至 Kossuth Lajos tér", "lat": 47.507, "lng": 19.045,
+                "details": { "open": "10:00 - 16:00", "price": "約 5400 HUF (歐盟居民價)" }
             },
-            { "name": "英國花園 (Englischer Garten)", "type": "景點", "time": "14:00 | 1.5小時", "trans": "步行或巴士 100", "lat": 48.1534, "lng": 11.5925 },
-            { 
-                "name": "皇家啤酒屋 (Hofbräuhaus)", "type": "餐飲", "time": "18:00 | 2小時", "trans": "步行", "lat": 48.1375, "lng": 11.5796,
-                "details": { "open": "09:00 - 23:30 (每日營業)", "price": "平均消費 €25 - €35" }
+            {
+                "name": "紐約咖啡館 (New York Café)",
+                "type": "餐飲", "time": "13:00 | 1.5小時", "trans": "地鐵 M4 或 4/6 號電車", "lat": 47.498, "lng": 19.070,
+                "details": { "open": "09:00 - 24:00", "price": "平均消費 7000 HUF" }
+            },
+            {
+                "name": "塞切尼溫泉 (Széchenyi)",
+                "type": "體驗", "time": "15:30 | 3小時", "trans": "地鐵 M1 至 Széchenyi fürdő", "lat": 47.5186, "lng": 19.0822,
+                "details": { "open": "07:00 - 19:00", "price": "約 9400 HUF" }
             }
         ]
     },
     {
         "day": 3,
         "date": "02/09 (一)",
-        "title": "富森 | 新天鵝堡一日遊",
-        "city": "Füssen",
-        "coordinates": [47.5576, 10.7498],
-        "summary": "搭乘火車前往富森，轉乘巴士上山參觀童話城堡。",
-        "tickets": "拜仁邦票 (Bayern Ticket) 最划算。城堡門票需提前一個月官網預訂。",
-        "notes": "冬季瑪麗安橋 (Marienbrücke) 可能因結冰封閉。務必注意火車班次。",
+        "title": "布達佩斯 | 布達城堡與漁人堡",
+        "city": "Budapest",
+        "coordinates": [47.502, 19.0348],
+        "summary": "搭乘 16 號巴士上山，遊覽布達城堡區，俯瞰佩斯區全景。",
+        "tickets": "馬提亞斯教堂門票 (若入內)。",
+        "notes": "避開週末人潮，週一景點開放。漁人堡上層冬季通常免費。",
         "spots": [
-            { "name": "慕尼黑中央車站", "type": "交通", "time": "08:30 | 出發", "trans": "RE 列車 (約2小時)", "lat": 48.1404, "lng": 11.5600 },
-            { 
-                "name": "新天鵝堡 (Neuschwanstein)", "type": "景點", "time": "11:30 | 3小時", "trans": "富森車站轉 Bus 73/78", "lat": 47.5576, "lng": 10.7498,
-                "details": { "open": "09:00 - 16:00 (需預約)", "price": "€17.50 (預訂+門票)" }
+            {
+                "name": "漁人堡 (Fisherman's Bastion)",
+                "type": "景點", "time": "09:30 | 1.5小時", "trans": "16 號巴士上山", "lat": 47.502, "lng": 19.0348,
+                "details": { "open": "24小時", "price": "免費/上塔收費" }
             },
-            { "name": "慕尼黑市區", "type": "返回", "time": "19:00 | 抵達", "trans": "RE 列車", "lat": 48.1351, "lng": 11.5820 }
+            {
+                "name": "馬提亞斯教堂",
+                "type": "景點", "time": "11:30 | 1小時", "trans": "步行", "lat": 47.5019, "lng": 19.0342,
+                "details": { "open": "09:00 - 17:00", "price": "約 2500 HUF" }
+            },
+            {
+                "name": "中央市場 (Great Market Hall)",
+                "type": "逛街", "time": "14:00 | 2小時", "trans": "地鐵 M4 或 2 號電車", "lat": 47.487, "lng": 19.0585,
+                "details": { "open": "06:00 - 17:00 (週一至週五)", "price": "免費" }
+            },
+            {
+                "name": "瓦茨街 (Váci utca)",
+                "type": "逛街", "time": "16:30 | 1.5小時", "trans": "步行", "lat": 47.493, "lng": 19.052,
+                "details": { "open": "全天", "price": "免費" }
+            }
         ]
     },
     {
         "day": 4,
         "date": "02/10 (二)",
-        "title": "移動日 | 前往薩爾斯堡",
-        "city": "Salzburg",
-        "coordinates": [47.8095, 13.0550],
-        "summary": "早晨搭火車跨國前往奧地利薩爾斯堡，下午遊覽米拉貝爾宮。",
-        "tickets": "使用拜仁邦票 (可涵蓋至 Salzburg Hbf) 或預購 DB/ÖBB 早鳥票。",
-        "notes": "薩爾斯堡卡 (Salzburg Card) 極力推薦，包含交通與景點。",
+        "title": "移動日 | 中停斯洛伐克首都布拉提斯拉瓦",
+        "city": "Bratislava",
+        "coordinates": [48.148, 17.107],
+        "summary": "搭火車前往斯洛伐克，將行李寄放在中央車站後，快速遊覽老城區與城堡。",
+        "tickets": "火車票提前在 MÁV 或 ČD 官網預訂。布拉提斯拉瓦使用 24 小時交通票。",
+        "notes": "布拉提斯拉瓦車站有行李寄放櫃。建議購買直達布拉格的火車票並設定中停 (Stopover)。",
         "spots": [
-            { "name": "慕尼黑 -> 薩爾斯堡", "type": "交通", "time": "09:00 | 1.5-2小時", "trans": "Meridian (M) 或 RJX 火車", "lat": 47.8129, "lng": 13.0454 },
-            { 
-                "name": "米拉貝爾宮 (Mirabellgarten)", "type": "景點", "time": "14:00 | 1.5小時", "trans": "步行", "lat": 47.8055, "lng": 13.0416,
-                "details": { "open": "08:00 - 18:00", "price": "花園免費" }
+            {
+                "name": "布達佩斯 Keleti 車站 -> 布拉提斯拉瓦 Hlavná stanica",
+                "type": "交通", "time": "09:30 | 2小時 45分", "trans": "EC 列車", "lat": 48.158, "lng": 17.111
             },
-            { 
-                "name": "糧食胡同 (Getreidegasse)", "type": "逛街", "time": "16:30 | 2小時", "trans": "步行過橋", "lat": 47.7997, "lng": 13.0425,
-                "details": { "open": "全天開放 (商店約至18:00)", "price": "免費" }
+            {
+                "name": "布拉提斯拉瓦中央車站",
+                "type": "交通", "time": "12:30 | 寄放行李", "trans": "步行/市區巴士", "lat": 48.158, "lng": 17.111
+            },
+            {
+                "name": "布拉提斯拉瓦城堡 (Bratislavský hrad)",
+                "type": "景點", "time": "14:30 | 2小時", "trans": "93 號巴士 (2 站) 或 25 分鐘步行上山", "lat": 48.143, "lng": 17.103,
+                "details": { "open": "10:00 - 18:00 (博物館)", "price": "免費 (庭院)" }
+            },
+            {
+                "name": "老城區與聖米哈爾門",
+                "type": "景點", "time": "16:30 | 1.5小時", "trans": "步行下山", "lat": 48.144, "lng": 17.106
+            },
+            {
+                "name": "布拉提斯拉瓦 Hlavná stanica -> 布拉格 Hlavní nádraží",
+                "type": "交通", "time": "19:00 | 4小時", "trans": "EC 列車", "lat": 50.083, "lng": 14.436
             }
         ]
     },
     {
         "day": 5,
         "date": "02/11 (三)",
-        "title": "薩爾斯堡 | 要塞與莫札特",
-        "city": "Salzburg",
-        "coordinates": [47.7949, 13.0475],
-        "summary": "登上薩爾斯堡要塞俯瞰雪景，參觀莫札特出生地。",
-        "tickets": "使用薩爾斯堡卡 (包含纜車、要塞門票、莫札特故居)。",
-        "notes": "冬季城堡纜車營運正常，但戶外風大請保暖。",
+        "title": "布拉格 | 城堡區與黃金巷",
+        "city": "Prague",
+        "coordinates": [50.0909, 14.4005],
+        "summary": "上午專注於布拉格城堡區的歷史建築，包含聖維特大教堂。下午漫步小城區。",
+        "tickets": "布拉格城堡 Circuit B 聯票。使用 72 小時 PID 交通票（建議）。",
+        "notes": "城堡區早上人潮較少，先參觀內部。進入城堡區需通過安檢。",
         "spots": [
-            { 
-                "name": "薩爾斯堡要塞 (Festung)", "type": "景點", "time": "09:30 | 2.5小時", "trans": "Festungsbahn 纜車", "lat": 47.7949, "lng": 13.0475,
-                "details": { "open": "09:30 - 17:00", "price": "€14.50 (基本) / 持卡免費" }
+            {
+                "name": "布拉格城堡 (Prague Castle)",
+                "type": "景點", "time": "09:30 | 4小時", "trans": "22 號電車至 Pražský hrad", "lat": 50.0909, "lng": 14.4005,
+                "details": { "open": "09:00 - 16:00 (冬季)", "price": "CZK 250 (Circuit B)" }
             },
-            { 
-                "name": "莫札特出生地", "type": "景點", "time": "13:00 | 1小時", "trans": "步行", "lat": 47.8000, "lng": 13.0436,
-                "details": { "open": "09:00 - 17:30", "price": "€13.50 / 持卡免費" }
+            {
+                "name": "聖維特大教堂",
+                "type": "景點", "time": "包含在城堡行程內", "trans": "步行", "lat": 50.0906, "lng": 14.4005,
+                "details": { "open": "09:00 - 16:00", "price": "包含在 Circuit B" }
             },
-            { 
-                "name": "薩爾斯堡大教堂", "type": "景點", "time": "15:00 | 1小時", "trans": "步行", "lat": 47.7979, "lng": 13.0450,
-                "details": { "open": "08:00 - 17:00", "price": "自由捐獻" }
+            {
+                "name": "小城區 (Malá Strana)",
+                "type": "逛街", "time": "14:30 | 2小時", "trans": "步行下山", "lat": 50.088, "lng": 14.404,
+                "details": { "open": "全天", "price": "免費" }
+            },
+            {
+                "name": "查理大橋 (Charles Bridge)",
+                "type": "景點", "time": "17:00 | 1小時", "trans": "步行", "lat": 50.0865, "lng": 14.4114,
+                "details": { "open": "全天", "price": "免費" }
             }
         ]
     },
     {
         "day": 6,
         "date": "02/12 (四)",
-        "title": "哈修塔特 | 世界最美小鎮一日遊",
-        "city": "Hallstatt",
-        "coordinates": [47.5622, 13.6493],
-        "summary": "大眾運輸挑戰：巴士轉火車轉船，探訪湖畔小鎮。",
-        "tickets": "巴士上車購票或 OBB App 買全程票。渡輪現金支付。",
-        "notes": "冬季鹽礦關閉(通常1-2月)，重點在湖景與天空步道(若開放)。末班車較早，務必 16:30 前離開。",
+        "title": "布拉格 | 老城區經典與猶太區",
+        "city": "Prague",
+        "coordinates": [50.0877, 14.4211],
+        "summary": "上午集中在老城廣場，觀賞天文鐘報時。下午探索歷史悠久的猶太區。",
+        "tickets": "猶太區博物館聯票。",
+        "notes": "天文鐘整點報時人多，建議提前 15 分鐘佔位。猶太區週六關閉（已避開）。",
         "spots": [
-            { "name": "薩爾斯堡 -> 哈修塔特", "type": "交通", "time": "08:15 | 2.5小時", "trans": "Bus 150 -> Bad Ischl -> Train -> Ferry", "lat": 47.5622, "lng": 13.6493 },
-            { 
-                "name": "哈修塔特明信片觀景點", "type": "景點", "time": "11:30 | 1小時", "trans": "步行", "lat": 47.5645, "lng": 13.6506,
-                "details": { "open": "24小時", "price": "免費" }
+            {
+                "name": "老城廣場 (Old Town Square)",
+                "type": "景點", "time": "09:30 | 1小時", "trans": "地鐵 A 線或步行", "lat": 50.0877, "lng": 14.4211,
+                "details": { "open": "全天", "price": "免費" }
             },
-            { "name": "集市廣場 (Marktplatz)", "type": "景點", "time": "13:30 | 2小時", "trans": "步行", "lat": 47.5620, "lng": 13.6490 }
+            {
+                "name": "天文鐘 (Astronomical Clock)",
+                "type": "景點", "time": "10:50 | 0.5小時", "trans": "步行", "lat": 50.087, "lng": 14.4207,
+                "details": { "open": "09:00 - 22:00", "price": "老市政廳登塔約 CZK 250" }
+            },
+            {
+                "name": "猶太區 (Jewish Quarter - Josefov)",
+                "type": "景點", "time": "14:00 | 3小時", "trans": "步行", "lat": 50.091, "lng": 14.416,
+                "details": { "open": "09:00 - 16:30", "price": "約 CZK 550 (聯票)" }
+            },
+            {
+                "name": "火藥塔 (Prašná brána)",
+                "type": "景點", "time": "17:00 | 1小時", "trans": "步行", "lat": 50.087, "lng": 14.427,
+                "details": { "open": "10:00 - 18:00 (冬季)", "price": "約 CZK 150" }
+            }
         ]
     },
     {
         "day": 7,
         "date": "02/13 (五)",
-        "title": "移動日 | 前往音樂之都維也納",
-        "city": "Vienna",
-        "coordinates": [48.1851, 16.3762],
-        "summary": "搭乘 Railjet 高速列車前往維也納，入住中央車站附近。",
-        "tickets": "ÖBB Railjet 預售票 (Sparschiene)。維也納交通週票 (Wochenkarte) 或 72hr 券。",
-        "notes": "維也納中央車站 (Wien Hbf) 生活機能強，超市多。",
+        "title": "布拉格 | CK 小鎮一日遊 (高強度)",
+        "city": "Cesky Krumlov",
+        "coordinates": [48.8105, 14.3142],
+        "summary": "搭乘舒適的 RegioJet 巴士前往世界遺產小鎮庫倫洛夫，欣賞冬季雪景。",
+        "tickets": "RegioJet 巴士票需提前預訂來回。",
+        "notes": "冬季日照短，務必搭乘最早班次前往，並於 17:00 前離開。小鎮多石板路，請穿防滑鞋。",
         "spots": [
-            { "name": "薩爾斯堡 -> 維也納", "type": "交通", "time": "09:08 | 2.5小時", "trans": "ÖBB Railjet (RJX)", "lat": 48.1851, "lng": 16.3762 },
-            { 
-                "name": "貝爾维德宮 (Belvedere)", "type": "景點", "time": "14:00 | 2.5小時", "trans": "步行或電車 D 線", "lat": 48.1915, "lng": 16.3809,
-                "details": { "open": "10:00 - 18:00", "price": "€16 (上宮)" }
+            {
+                "name": "布拉格 Na Knížecí 站 -> CK 小鎮",
+                "type": "交通", "time": "08:00 | 3小時", "trans": "RegioJet Bus (需預訂)", "lat": 48.8105, "lng": 14.3142
             },
-            { 
-                "name": "卡爾教堂 (Karlskirche)", "type": "景點", "time": "17:00 | 1小時", "trans": "U-Bahn U1", "lat": 48.1982, "lng": 16.3718,
-                "details": { "open": "09:00 - 18:00", "price": "€9.50" }
+            {
+                "name": "CK 城堡與彩繪塔",
+                "type": "景點", "time": "11:30 | 2小時", "trans": "步行 (15 分鐘上山)", "lat": 48.8126, "lng": 14.313,
+                "details": { "open": "庭院全天，博物館 09:00 - 16:00", "price": "CZK 250 (登塔)" }
+            },
+            {
+                "name": "舊城廣場與伏爾塔瓦河彎道",
+                "type": "景點", "time": "14:00 | 2小時", "trans": "步行", "lat": 48.8107, "lng": 14.3152,
+                "details": { "open": "全天", "price": "免費" }
+            },
+            {
+                "name": "CK 小鎮 -> 布拉格 Na Knížecí 站",
+                "type": "交通", "time": "17:00 | 3小時", "trans": "RegioJet Bus", "lat": 50.0682, "lng": 14.4053
             }
         ]
     },
     {
         "day": 8,
         "date": "02/14 (六)",
-        "title": "維也納 | 熊布朗宮與市區",
-        "city": "Vienna",
-        "coordinates": [48.1848, 16.3122],
-        "summary": "參觀美泉宮 (熊布朗宮)，下午回到內城區逛街。",
-        "tickets": "美泉宮 Sisi Ticket 或 Grand Tour 需預約時段。",
-        "notes": "情人節晚餐建議提前一個月預訂。",
+        "title": "移動日 | 前往德國慕尼黑",
+        "city": "Munich",
+        "coordinates": [48.135, 11.582],
+        "summary": "搭乘 DB/ČD 快車前往慕尼黑，下午抵達後在中央車站周邊辦理入住並熟悉環境。",
+        "tickets": "DB 或 ČD 提前購買早鳥票（Sparticket）。慕尼黑使用 MVV 內區日票。",
+        "notes": "跨國長途車程，建議提前預備午餐。週六晚上瑪麗恩廣場熱鬧，適合晚餐。",
         "spots": [
-            { 
-                "name": "美泉宮 (Schönbrunn)", "type": "景點", "time": "09:30 | 3.5小時", "trans": "U-Bahn U4", "lat": 48.1848, "lng": 16.3122,
-                "details": { "open": "08:00 - 17:00", "price": "€29 (Grand Tour) / €24 (Imperial)" }
+            {
+                "name": "布拉格 Hlavní nádraží -> 慕尼黑 Hbf",
+                "type": "交通", "time": "09:30 | 5小時 45分", "trans": "DB/ČD EC 列車", "lat": 48.14, "lng": 11.56
             },
-            { "name": "聖史蒂芬大教堂", "type": "景點", "time": "14:30 | 1.5小時", "trans": "U-Bahn U1/U3", "lat": 48.2085, "lng": 16.3738 },
-            { "name": "葛拉本大街 (Graben)", "type": "逛街", "time": "16:00 | 2小時", "trans": "步行", "lat": 48.2088, "lng": 16.3698 }
+            { "name": "慕尼黑住宿 (Hbf 周邊)", "type": "住宿", "time": "16:00 | Check-in", "trans": "步行", "lat": 48.1404, "lng": 11.56 },
+            {
+                "name": "瑪麗恩廣場 (Marienplatz)",
+                "type": "景點", "time": "18:00 | 2小時", "trans": "S-Bahn/U-Bahn", "lat": 48.137, "lng": 11.575,
+                "details": { "open": "全天開放", "price": "免費" }
+            }
         ]
     },
     {
         "day": 9,
         "date": "02/15 (日)",
-        "title": "維也納 | 藝術史與咖啡館",
-        "city": "Vienna",
-        "coordinates": [48.2038, 16.3617],
-        "summary": "沉浸在藝術史博物館，下午體驗維也納咖啡文化。",
-        "tickets": "藝術史博物館門票。",
-        "notes": "中央咖啡館 (Café Central) 經常排隊，可改去 Café Sperl。",
+        "title": "慕尼黑 | 皇宮與英式花園",
+        "city": "Munich",
+        "coordinates": [48.1402, 11.5782],
+        "summary": "週日博物館照常開放，上午參觀慕尼黑王宮。下午在英國花園漫步，欣賞衝浪者。",
+        "tickets": "慕尼黑王宮聯票。使用 MVV 內區日票。",
+        "notes": "週日商店休息，重點放在景點與啤酒屋。王宮建議購買聯票 (Residenz + Treasury)。",
         "spots": [
-            { "name": "藝術史博物館", "type": "景點", "time": "10:00 | 3小時", "trans": "U-Bahn U2/U3", "lat": 48.2038, "lng": 16.3617 },
-            { "name": "霍夫堡皇宮 (Hofburg)", "type": "景點", "time": "14:00 | 2小時", "trans": "步行", "lat": 48.2056, "lng": 16.3653 },
-            { "name": "中央咖啡館", "type": "餐飲", "time": "16:30 | 1.5小時", "trans": "步行", "lat": 48.2104, "lng": 16.3654 }
+            {
+                "name": "慕尼黑王宮 (Residenz)",
+                "type": "景點", "time": "09:30 | 3小時", "trans": "U-Bahn U3/U6 至 Odeonsplatz", "lat": 48.1402, "lng": 11.5782,
+                "details": { "open": "09:00 - 17:00", "price": "€15 (聯票)" }
+            },
+            {
+                "name": "英國花園 (Englischer Garten) 與 衝浪點",
+                "type": "景點", "time": "13:30 | 2小時", "trans": "巴士 100", "lat": 48.148, "lng": 11.585
+            },
+            {
+                "name": "皇家啤酒屋 (Hofbräuhaus)",
+                "type": "餐飲", "time": "17:30 | 2小時", "trans": "步行", "lat": 48.1375, "lng": 11.5796,
+                "details": { "open": "09:00 - 23:30", "price": "平均消費 €30" }
+            }
         ]
     },
     {
         "day": 10,
         "date": "02/16 (一)",
-        "title": "移動日 | 前往布達佩斯",
-        "city": "Budapest",
-        "coordinates": [47.5005, 19.0837],
-        "summary": "搭火車跨越國界前往匈牙利布達佩斯。",
-        "tickets": "ÖBB 或 MÁV 官網購票。布達佩斯購買 72hr Travel Card。",
-        "notes": "注意布達佩斯有不同火車站 (Keleti/Nyugati)，確認車票。",
+        "title": "慕尼黑 | 富森新天鵝堡一日遊",
+        "city": "Füssen",
+        "coordinates": [47.5576, 10.7498],
+        "summary": "搭乘火車往返富森，參觀童話城堡。",
+        "tickets": "購買拜仁邦票 (Bayern Ticket)，可涵蓋火車與富森當地巴士。",
+        "notes": "城堡門票必須提前預訂！冬季瑪麗安橋 (Marienbrücke) 可能封閉。",
         "spots": [
-            { "name": "維也納 -> 布達佩斯", "type": "交通", "time": "10:40 | 2.5小時", "trans": "ÖBB Railjet -> Budapest-Keleti", "lat": 47.5005, "lng": 19.0837 },
-            { "name": "紐約咖啡館 (New York Café)", "type": "餐飲", "time": "15:00 | 1.5小時", "trans": "Bus/Tram/Metro", "lat": 47.4985, "lng": 19.0705 },
-            { "name": "多瑙河遊船", "type": "體驗", "time": "19:00 | 1小時", "trans": "Tram 2", "lat": 47.4967, "lng": 19.0494 }
+            {
+                "name": "慕尼黑 Hbf -> 富森 (Füssen)",
+                "type": "交通", "time": "08:30 | 2小時 5分", "trans": "RE 列車 (使用邦票)", "lat": 47.573, "lng": 10.701
+            },
+            {
+                "name": "新天鵝堡 (Neuschwanstein)",
+                "type": "景點", "time": "11:00 | 3小時", "trans": "富森車站轉 Bus 73/78", "lat": 47.5576, "lng": 10.7498,
+                "details": { "open": "09:00 - 16:00", "price": "€17.50 (預訂+門票)" }
+            },
+            {
+                "name": "富森 -> 慕尼黑 Hbf",
+                "type": "交通", "time": "17:00 | 2小時 5分", "trans": "RE 列車", "lat": 48.14, "lng": 11.56
+            }
         ]
     },
     {
         "day": 11,
         "date": "02/17 (二)",
-        "title": "布達佩斯 | 布達區歷史漫步",
-        "city": "Budapest",
-        "coordinates": [47.5020, 19.0348],
-        "summary": "探索多瑙河西岸的布達城堡區，俯瞰城市全景。",
-        "tickets": "馬提亞斯教堂門票，漁人堡上層需票(冬季有時免費)。",
-        "notes": "Bus 16 可直接上城堡山。",
+        "title": "移動日 | 前往薩爾斯堡 + 卡片啟用",
+        "city": "Salzburg",
+        "coordinates": [47.8095, 13.055],
+        "summary": "搭火車前往薩爾斯堡。下午 14:00 啟用薩爾斯堡卡 (24h)，馬上用於纜車上山及博物館。",
+        "tickets": "使用拜仁邦票 (可涵蓋至 Salzburg Hbf) 或預購 DB/ÖBB 票。購買 24 小時薩爾斯堡卡。",
+        "notes": "薩爾斯堡卡啟用後 24 小時有效。下午先用卡片價值最高的景點（要塞纜車）。",
         "spots": [
-            { "name": "漁人堡 (Fisherman's Bastion)", "type": "景點", "time": "09:30 | 1.5小時", "trans": "Bus 16", "lat": 47.5020, "lng": 19.0348 },
-            { "name": "馬提亞斯教堂", "type": "景點", "time": "11:00 | 1小時", "trans": "步行", "lat": 47.5019, "lng": 19.0342 },
-            { "name": "布達皇宮 (Buda Castle)", "type": "景點", "time": "14:00 | 2小時", "trans": "步行或纜車", "lat": 47.4962, "lng": 19.0396 }
+            {
+                "name": "慕尼黑 Hbf -> 薩爾斯堡 Hbf",
+                "type": "交通", "time": "09:00 | 1小時 40分", "trans": "Meridian (M) 或 RJX 火車", "lat": 47.8129, "lng": 13.0454
+            },
+            { "name": "薩爾斯堡住宿 Check-in", "type": "住宿", "time": "11:30 | 步行", "trans": "步行", "lat": 47.81, "lng": 13.05 },
+            {
+                "name": "薩爾斯堡要塞 (Festung) 與纜車 (卡片啟用!)",
+                "type": "景點", "time": "14:00 | 2.5小時", "trans": "Festungsbahn 纜車 (卡片免費)", "lat": 47.7949, "lng": 13.0475,
+                "details": { "open": "09:30 - 17:00", "price": "持卡免費" }
+            },
+            {
+                "name": "莫札特出生地",
+                "type": "景點", "time": "16:45 | 1小時", "trans": "步行", "lat": 47.8, "lng": 13.0436,
+                "details": { "open": "09:00 - 17:30", "price": "持卡免費" }
+            }
         ]
     },
     {
         "day": 12,
         "date": "02/18 (三)",
-        "title": "布達佩斯 | 佩斯區與溫泉",
-        "city": "Budapest",
-        "coordinates": [47.5076, 19.0456],
-        "summary": "參觀宏偉的國會大廈，下午享受著名的塞切尼溫泉。",
-        "tickets": "國會大廈務必提前官網預約導覽。溫泉自備泳衣拖鞋。",
-        "notes": "國會大廈安檢嚴格。冬季泡露天溫泉是獨特體驗。",
+        "title": "薩爾斯堡 | 卡片延續與音樂之聲",
+        "city": "Salzburg",
+        "coordinates": [47.8055, 13.0416],
+        "summary": "薩爾斯堡卡延續使用至 14:00，上午參觀米拉貝爾宮及博物館。",
+        "tickets": "繼續使用薩爾斯堡卡 (直至 14:00)。",
+        "notes": "米拉貝爾花園適合拍照，卡片到期後下午可專注於免費景點。",
         "spots": [
-            { "name": "匈牙利國會大廈", "type": "景點", "time": "10:00 | 1.5小時", "trans": "Metro M2 Kossuth Lajos tér", "lat": 47.5076, "lng": 19.0456 },
-            { "name": "塞切尼溫泉 (Széchenyi)", "type": "體驗", "time": "15:00 | 3小時", "trans": "Metro M1 Széchenyi fürdő", "lat": 47.5186, "lng": 19.0822 },
-            { "name": "英雄廣場", "type": "景點", "time": "18:00 | 0.5小時", "trans": "步行", "lat": 47.5138, "lng": 19.0778 }
+            {
+                "name": "米拉貝爾宮 (Mirabellgarten) 與宮殿",
+                "type": "景點", "time": "09:30 | 1.5小時", "trans": "巴士/步行 (卡片免費)", "lat": 47.8055, "lng": 13.0416,
+                "details": { "open": "08:00 - 18:00", "price": "花園免費" }
+            },
+            {
+                "name": "薩爾斯堡博物館 (Salzburg Museum)",
+                "type": "景點", "time": "11:30 | 1.5小時", "trans": "步行 (卡片免費)", "lat": 47.7985, "lng": 13.0445,
+                "details": { "open": "09:00 - 17:00", "price": "持卡免費" }
+            },
+            {
+                "name": "薩爾斯堡大教堂",
+                "type": "景點", "time": "14:30 | 1小時", "trans": "步行", "lat": 47.7979, "lng": 13.045,
+                "details": { "open": "08:00 - 17:00", "price": "自由捐獻" }
+            }
         ]
     },
     {
         "day": 13,
         "date": "02/19 (四)",
-        "title": "布達佩斯 | 中央市場與漫遊",
-        "city": "Budapest",
-        "coordinates": [47.4870, 19.0585],
-        "summary": "探索當地美食，購買伴手禮，漫步瓦茨街。",
-        "tickets": "無特殊門票。",
-        "notes": "中央市場二樓有熟食攤販，適合午餐。",
+        "title": "移動日 | 前往奧地利因斯布魯克",
+        "city": "Innsbruck",
+        "coordinates": [47.265, 11.395],
+        "summary": "搭乘 ÖBB 火車穿越阿爾卑斯山谷，前往蒂羅爾州首府因斯布魯克。",
+        "tickets": "ÖBB Railjet/IC 火車票提前預訂。抵達後購買 48 小時因斯布魯克卡 (約 €50)。",
+        "notes": "這段火車路線風景極美，務必坐在靠窗位置。因斯布魯克卡建議在 Day 14 早上啟用，涵蓋兩整天的活動。",
         "spots": [
-            { "name": "中央市場 (Great Market Hall)", "type": "逛街", "time": "10:00 | 2小時", "trans": "Tram 47/49", "lat": 47.4870, "lng": 19.0585 },
-            { "name": "瓦茨街 (Váci utca)", "type": "逛街", "time": "14:00 | 2小時", "trans": "步行", "lat": 47.4933, "lng": 19.0523 },
-            { "name": "自由橋 (Liberty Bridge)", "type": "景點", "time": "16:30 | 0.5小時", "trans": "步行", "lat": 47.4856, "lng": 19.0547 }
+            {
+                "name": "薩爾斯堡 Hbf -> 因斯布魯克 Hbf",
+                "type": "交通", "time": "10:00 | 1小時 50分", "trans": "ÖBB Railjet/IC", "lat": 47.265, "lng": 11.395
+            },
+            { "name": "因斯布魯克住宿 Check-in", "type": "住宿", "time": "12:30 | 市區交通", "trans": "步行/電車", "lat": 47.266, "lng": 11.393 },
+            {
+                "name": "黃金屋頂 (Goldenes Dachl) 與老城區",
+                "type": "景點", "time": "15:00 | 2小時", "trans": "步行", "lat": 47.268, "lng": 11.395,
+                "details": { "open": "全天", "price": "免費" }
+            },
+            {
+                "name": "安娜柱與瑪麗亞·特蕾莎大街",
+                "type": "逛街", "time": "17:30 | 1.5小時", "trans": "步行", "lat": 47.266, "lng": 11.396
+            }
         ]
     },
     {
         "day": 14,
         "date": "02/20 (五)",
-        "title": "移動日 | 前往布拉格",
-        "city": "Prague",
-        "coordinates": [50.0835, 14.4362],
-        "summary": "長途移動日，搭火車前往捷克布拉格。",
-        "tickets": "MÁV 或 CD (捷克國鐵) 訂票。布拉格使用 PID 票券。",
-        "notes": "車程較長 (約 7 小時)，建議準備午餐上車。抵達站通常為 Praha hl.n.。",
+        "title": "因斯布魯克 | 北山纜車 (卡片啟用!)",
+        "city": "Innsbruck",
+        "coordinates": [47.28, 11.405],
+        "summary": "上午啟用 48 小時因斯布魯克卡，直衝北山 (Nordkette) 纜車，在 2,300 公尺處欣賞阿爾卑斯山景。",
+        "tickets": "因斯布魯克卡 (48 小時) 啟用。卡片價值最高的一天。",
+        "notes": "冬季山區極冷，務必穿戴最保暖衣物。纜車通常在 10:00 後人較少。",
         "spots": [
-            { "name": "布達佩斯 -> 布拉格", "type": "交通", "time": "09:30 | 7小時", "trans": "EC 列車 (經 Bratislava/Brno)", "lat": 50.0835, "lng": 14.4362 },
-            { "name": "瓦茨拉夫廣場", "type": "景點", "time": "17:30 | 1小時", "trans": "步行/Metro", "lat": 50.0813, "lng": 14.4280 }
+            {
+                "name": "北山纜車 (Nordkettenbahnen) - 登山纜車站",
+                "type": "景點", "time": "09:30 | 4小時", "trans": "步行/電車 (卡片免費)", "lat": 47.27, "lng": 11.395,
+                "details": { "open": "08:30 - 17:00", "price": "持卡免費" }
+            },
+            {
+                "name": "阿爾卑斯動物園 (Alpenzoo)",
+                "type": "景點", "time": "14:30 | 2小時", "trans": "北山纜車中途站 (卡片免費)", "lat": 47.278, "lng": 11.393,
+                "details": { "open": "09:00 - 17:00", "price": "持卡免費" }
+            },
+            {
+                "name": "蒂羅爾州立博物館",
+                "type": "景點", "time": "17:00 | 1.5小時", "trans": "電車/步行 (卡片免費)", "lat": 47.265, "lng": 11.401,
+                "details": { "open": "09:00 - 17:00", "price": "持卡免費" }
+            }
         ]
     },
     {
         "day": 15,
         "date": "02/21 (六)",
-        "title": "布拉格 | 老城區經典",
-        "city": "Prague",
-        "coordinates": [50.0877, 14.4211],
-        "summary": "走訪天文鐘、老城廣場與查理大橋。",
-        "tickets": "老城市政廳登塔票。",
-        "notes": "查理大橋清晨或深夜人最少，氣氛最佳。",
+        "title": "因斯布魯克 | 施華洛世奇與奧運跳台",
+        "city": "Innsbruck",
+        "coordinates": [47.25, 11.43],
+        "summary": "搭乘卡片涵蓋的巴士前往施華洛世奇水晶世界 (Swarovski Crystal World)。回程參觀伯格伊澤爾跳台 (Bergisel ski jump)。",
+        "tickets": "因斯布魯克卡延續使用 (48 小時內)。",
+        "notes": "施華洛世奇有免費接駁車 (卡片免費)，但我們使用大眾運輸 (Bus 504)。",
         "spots": [
-            { "name": "老城廣場 (Old Town Square)", "type": "景點", "time": "09:30 | 2小時", "trans": "步行", "lat": 50.0877, "lng": 14.4211 },
-            { "name": "天文鐘 (Astronomical Clock)", "type": "景點", "time": "11:00 | 0.5小時", "trans": "步行", "lat": 50.0870, "lng": 14.4207 },
-            { "name": "查理大橋 (Charles Bridge)", "type": "景點", "time": "15:00 | 1小時", "trans": "步行", "lat": 50.0865, "lng": 14.4114 }
+            {
+                "name": "施華洛世奇水晶世界 (Wattens)",
+                "type": "景點", "time": "10:00 | 3小時", "trans": "504 號巴士 (卡片免費)", "lat": 47.305, "lng": 11.597,
+                "details": { "open": "09:00 - 19:00", "price": "持卡免費" }
+            },
+            {
+                "name": "伯格伊澤爾跳台 (Bergisel)",
+                "type": "景點", "time": "15:00 | 2小時", "trans": "電車 1 或 STB 輕軌 (卡片免費)", "lat": 47.25, "lng": 11.403,
+                "details": { "open": "09:00 - 17:00", "price": "持卡免費" }
+            },
+            {
+                "name": "凱旋門 (Triumphpforte)",
+                "type": "景點", "time": "17:30 | 0.5小時", "trans": "電車 1", "lat": 47.263, "lng": 11.396
+            }
         ]
     },
     {
         "day": 16,
         "date": "02/22 (日)",
-        "title": "布拉格 | 城堡區巡禮",
-        "city": "Prague",
-        "coordinates": [50.0909, 14.4005],
-        "summary": "世界最大古堡群，包含聖維特大教堂與黃金巷。",
-        "tickets": "布拉格城堡 Circuit B (包含大教堂、舊皇宮、黃金巷)。",
-        "notes": "進入城堡區需安檢。星巴克城堡店有絕佳觀景台。",
+        "title": "移動日 | 前往斯洛維尼亞盧布爾雅那",
+        "city": "Ljubljana",
+        "coordinates": [46.056, 14.505],
+        "summary": "長途跨國移動，搭乘 ÖBB EC 或夜車 (如果您選擇夜車) 前往盧布爾雅那。",
+        "tickets": "ÖBB 官網購買 Sparschiene (早鳥票)。",
+        "notes": "這段路線車程約 4.5 小時，風景優美。盧布爾雅那週日商店關閉，重點放在戶外景點。",
         "spots": [
-            { 
-                "name": "布拉格城堡 (Prague Castle)", "type": "景點", "time": "09:30 | 4小時", "trans": "Tram 22 至 Pražský hrad", "lat": 50.0909, "lng": 14.4005,
-                "details": { "open": "09:00 - 16:00 (冬季)", "price": "CZK 250 (Circuit B)" }
+            {
+                "name": "因斯布魯克 Hbf -> 盧布爾雅那",
+                "type": "交通", "time": "10:00 | 4小時 30分", "trans": "ÖBB EC 列車 (或夜車臥鋪)", "lat": 46.056, "lng": 14.505
             },
-            { "name": "聖維特大教堂", "type": "景點", "time": "11:00 | 包含", "trans": "步行", "lat": 50.0906, "lng": 14.4005 },
-            { "name": "小城區 (Malá Strana)", "type": "逛街", "time": "15:00 | 2小時", "trans": "步行下山", "lat": 50.0883, "lng": 14.4042 }
+            { "name": "盧布爾雅那住宿 Check-in", "type": "住宿", "time": "15:00 | 步行", "trans": "步行", "lat": 46.05, "lng": 14.507 },
+            {
+                "name": "龍橋 (Zmajski Most)",
+                "type": "景點", "time": "17:00 | 1小時", "trans": "步行", "lat": 46.052, "lng": 14.508,
+                "details": { "open": "全天", "price": "免費" }
+            },
+            {
+                "name": "三重橋 (Tromostovje) 與普雷舍倫廣場",
+                "type": "景點", "time": "18:30 | 1小時", "trans": "步行", "lat": 46.051, "lng": 14.505,
+                "details": { "open": "全天", "price": "免費" }
+            }
         ]
     },
     {
         "day": 17,
         "date": "02/23 (一)",
-        "title": "庫倫洛夫 | CK 小鎮一日遊",
-        "city": "Cesky Krumlov",
-        "coordinates": [48.8105, 14.3142],
-        "summary": "搭乘巴士當日往返這座被伏爾塔瓦河環繞的中世紀小鎮。",
-        "tickets": "RegioJet 或 FlixBus 巴士票 (務必來回先買好)。",
-        "notes": "小鎮為石板路，若有積雪請穿防滑鞋。從巴士站到市區需步行約15分。",
+        "title": "盧布爾雅那 | 城堡與老城區漫步",
+        "city": "Ljubljana",
+        "coordinates": [46.049, 14.507],
+        "summary": "搭乘纜車登上盧布爾雅那城堡，俯瞰老城區，下午參觀國家畫廊。",
+        "tickets": "盧布爾雅那城堡纜車票。",
+        "notes": "盧布爾雅那城堡是市區制高點，建議上午光線充足時前往。",
         "spots": [
-            { "name": "布拉格 -> CK 小鎮", "type": "交通", "time": "08:00 | 3小時", "trans": "RegioJet Bus (Na Knížecí 站發車)", "lat": 48.8105, "lng": 14.3142 },
-            { "name": "CK 城堡與彩繪塔", "type": "景點", "time": "11:30 | 2小時", "trans": "步行", "lat": 48.8126, "lng": 14.3130 },
-            { "name": "舊城廣場", "type": "景點", "time": "14:00 | 2小時", "trans": "步行", "lat": 48.8107, "lng": 14.3152 },
-            { "name": "返回布拉格", "type": "交通", "time": "17:00 | 3小時", "trans": "Bus", "lat": 50.0682, "lng": 14.4053 }
+            {
+                "name": "盧布爾雅那城堡 (Ljubljana Castle)",
+                "type": "景點", "time": "09:30 | 2.5小時", "trans": "城堡纜車 (Funicular)", "lat": 46.049, "lng": 14.507,
+                "details": { "open": "10:00 - 20:00", "price": "約 €16 (含纜車)" }
+            },
+            {
+                "name": "國家美術館 (National Gallery of Slovenia)",
+                "type": "景點", "time": "13:30 | 2小時", "trans": "步行", "lat": 46.055, "lng": 14.502,
+                "details": { "open": "10:00 - 18:00 (週一休館已避開)", "price": "約 €10" }
+            },
+            {
+                "name": "露天中央市場 (Central Market)",
+                "type": "逛街", "time": "16:00 | 1小時", "trans": "步行", "lat": 46.05, "lng": 14.508,
+                "details": { "open": "06:00 - 18:00 (週一至週六)", "price": "免費" }
+            }
         ]
     },
     {
         "day": 18,
         "date": "02/24 (二)",
-        "title": "布拉格 | 文青與高堡",
-        "city": "Prague",
-        "coordinates": [50.0645, 14.4179],
-        "summary": "上午拜訪會跳舞的房子，下午至高堡區俯瞰伏爾塔瓦河。",
-        "tickets": "高堡區主要免費，教堂需門票。",
-        "notes": "高堡區遊客較少，視野極佳。",
+        "title": "盧布爾雅那 | 布萊德湖一日遊 (戶外大景)",
+        "city": "Lake Bled",
+        "coordinates": [46.368, 14.114],
+        "summary": "搭乘火車或巴士前往布萊德湖 (Lake Bled)，這是冬季最經典的戶外景點。環湖拍照。",
+        "tickets": "巴士或火車票 (約 €8-€12 單程)，若搭火車需轉接駁。",
+        "notes": "冬季湖面可能有薄冰，風景獨特。湖區周邊交通不便，請依賴當地巴士或步行。",
         "spots": [
-            { "name": "跳舞的房子", "type": "景點", "time": "10:00 | 0.5小時", "trans": "Tram 17", "lat": 50.0754, "lng": 14.4141 },
-            { "name": "高堡 (Vyšehrad)", "type": "景點", "time": "14:00 | 2.5小時", "trans": "Metro C 至 Vyšehrad", "lat": 50.0645, "lng": 14.4179 }
+            {
+                "name": "盧布爾雅那 -> 布萊德 (Bled)",
+                "type": "交通", "time": "09:00 | 1小時 15分", "trans": "巴士 (Bled Jezero 站)", "lat": 46.368, "lng": 14.114
+            },
+            {
+                "name": "布萊德湖 (Lake Bled) 環湖",
+                "type": "景點", "time": "10:30 | 3小時", "trans": "步行", "lat": 46.363, "lng": 14.108,
+                "details": { "open": "全天", "price": "免費" }
+            },
+            {
+                "name": "布萊德城堡 (Bled Castle)",
+                "type": "景點", "time": "14:00 | 2小時", "trans": "步行上山", "lat": 46.367, "lng": 14.100,
+                "details": { "open": "09:00 - 16:00", "price": "約 €18" }
+            },
+            {
+                "name": "布萊德 -> 盧布爾雅那",
+                "type": "交通", "time": "17:00 | 1小時 15分", "trans": "巴士", "lat": 46.056, "lng": 14.505
+            }
         ]
     },
     {
         "day": 19,
         "date": "02/25 (三)",
-        "title": "移動日 | 經德勒斯登至柏林",
-        "city": "Dresden",
-        "coordinates": [51.0504, 13.7373],
-        "summary": "從布拉格出發，中停「易北河畔的佛羅倫斯」德勒斯登半日，晚間抵達柏林。",
-        "tickets": "DB/CD 跨國火車票 (買 Prague -> Berlin，部分票種允許中停，或分段買)。",
-        "notes": "德勒斯登車站有置物櫃可放行李。",
+        "title": "移動日 | 返回奧地利格拉茨",
+        "city": "Graz",
+        "coordinates": [47.070, 15.439],
+        "summary": "搭乘火車返回奧地利，中停格拉茨 (Graz)，這是一個擁有世界遺產老城區的大學城。",
+        "tickets": "Slovenian Railways 或 ÖBB 提前購買票。",
+        "notes": "這段路程較長，中停格拉茨可休息並遊覽老城區。格拉茨老城區為世界文化遺產。",
         "spots": [
-            { "name": "布拉格 -> 德勒斯登", "type": "交通", "time": "08:30 | 2.5小時", "trans": "EC 列車", "lat": 51.0406, "lng": 13.7314 },
-            { "name": "聖母教堂 (Frauenkirche)", "type": "景點", "time": "12:00 | 1小時", "trans": "步行", "lat": 51.0519, "lng": 13.7415 },
-            { "name": "茲溫格宮 (Zwinger)", "type": "景點", "time": "14:00 | 1小時", "trans": "步行", "lat": 51.0529, "lng": 13.7337 },
-            { "name": "德勒斯登 -> 柏林", "type": "交通", "time": "17:00 | 2小時", "trans": "IC/EC 列車", "lat": 52.5200, "lng": 13.4050 }
+            {
+                "name": "盧布爾雅那 -> 格拉茨 Hbf",
+                "type": "交通", "time": "09:00 | 3小時 45分", "trans": "EC/IC 列車", "lat": 47.070, "lng": 15.439
+            },
+            {
+                "name": "格拉茨城堡山 (Schlossberg)",
+                "type": "景點", "time": "13:30 | 2小時", "trans": "電車 1/3/6/7 或 Schlossbergbahn 纜車", "lat": 47.073, "lng": 15.438,
+                "details": { "open": "全天", "price": "纜車約 €2.40" }
+            },
+            {
+                "name": "格拉茨老城區與中央廣場",
+                "type": "逛街", "time": "15:45 | 1.5小時", "trans": "步行", "lat": 47.071, "lng": 15.438
+            },
+            {
+                "name": "格拉茨 Hbf -> 維也納 Hbf (或直接前往布達佩斯)",
+                "type": "交通", "time": "18:00 | 2小時 30分", "trans": "ÖBB Railjet", "lat": 48.208, "lng": 16.372
+            }
         ]
     },
     {
         "day": 20,
         "date": "02/26 (四)",
-        "title": "柏林 | 歷史的傷痕",
-        "city": "Berlin",
-        "coordinates": [52.5163, 13.3777],
-        "summary": "參觀布蘭登堡門、國會大廈與歐洲被害猶太人紀念碑。",
-        "tickets": "國會大廈穹頂 **必須** 提前官網免費預約。",
-        "notes": "柏林交通分區 ABC，市區買 AB 區即可。",
+        "title": "維也納短暫停留 | 博物館與咖啡",
+        "city": "Vienna",
+        "coordinates": [48.203, 16.361],
+        "summary": "從格拉茨移動至維也納。上午參觀藝術史博物館，下午體驗維也納咖啡文化。",
+        "tickets": "維也納交通日票或 72 小時票。",
+        "notes": "將維也納作為回布達佩斯的緩衝站。藝術史博物館週四延長開放，方便安排。",
         "spots": [
-            { "name": "布蘭登堡門", "type": "景點", "time": "09:30 | 1小時", "trans": "S-Bahn Brandenburger Tor", "lat": 52.5163, "lng": 13.3777 },
-            { "name": "國會大廈 (Reichstag)", "type": "景點", "time": "11:00 | 1.5小時", "trans": "步行", "lat": 52.5186, "lng": 13.3761 },
-            { "name": "猶太人紀念碑", "type": "景點", "time": "14:00 | 1小時", "trans": "步行", "lat": 52.5139, "lng": 13.3815 }
+            {
+                "name": "維也納住宿 Check-in",
+                "type": "住宿", "time": "09:30 | 市區交通", "trans": "步行/地鐵 U1", "lat": 48.206, "lng": 16.376
+            },
+            {
+                "name": "藝術史博物館 (Kunsthistorisches Museum)",
+                "type": "景點", "time": "11:00 | 3小時", "trans": "地鐵 U2/U3", "lat": 48.203, "lng": 16.361,
+                "details": { "open": "10:00 - 18:00", "price": "€21" }
+            },
+            {
+                "name": "中央咖啡館 (Café Central)",
+                "type": "餐飲", "time": "15:00 | 1.5小時", "trans": "步行", "lat": 48.2104, "lng": 16.3654,
+                "details": { "open": "07:30 - 22:00", "price": "人均 €20" }
+            },
+            {
+                "name": "聖史蒂芬大教堂",
+                "type": "景點", "time": "17:00 | 1小時", "trans": "地鐵 U1/U3", "lat": 48.2085, "lng": 16.3738,
+                "details": { "open": "09:00 - 17:30", "price": "自由捐獻" }
+            }
         ]
     },
     {
         "day": 21,
         "date": "02/27 (五)",
-        "title": "柏林 | 博物館島文化巡禮",
-        "city": "Berlin",
-        "coordinates": [52.5208, 13.3975],
-        "summary": "全日探索世界遺產博物館島，重點在佩加蒙與新博物館。",
-        "tickets": "博物館島聯票 (Museum Island Pass)。",
-        "notes": "佩加蒙博物館(Pergamon)部分整修中，需確認開放區域。新博物館必看娜芙蒂蒂像。",
+        "title": "移動日 | 維也納 -> 布達佩斯",
+        "city": "Budapest",
+        "coordinates": [47.5, 19.05],
+        "summary": "早上搭乘 ÖBB Railjet 高速列車返回布達佩斯，為返程做準備。",
+        "tickets": "ÖBB Railjet 提前購買早鳥票。",
+        "notes": "這段火車路程快速且舒適，適合休息。下午在布達佩斯進行最後購物。",
         "spots": [
-            { "name": "博物館島", "type": "景點", "time": "10:00 | 4小時", "trans": "Bus 100/200 或 U5", "lat": 52.5195, "lng": 13.3996 },
-            { "name": "柏林大教堂", "type": "景點", "time": "15:00 | 1小時", "trans": "步行", "lat": 52.5190, "lng": 13.4010 },
-            { "name": "亞歷山大廣場", "type": "逛街", "time": "17:00 | 1.5小時", "trans": "步行", "lat": 52.5219, "lng": 13.4132 }
+            {
+                "name": "維也納 Hbf -> 布達佩斯 Keleti 車站",
+                "type": "交通", "time": "10:00 | 2小時 45分", "trans": "ÖBB Railjet", "lat": 47.50, "lng": 19.0837
+            },
+            { "name": "布達佩斯住宿 (Keleti 車站周邊)", "type": "住宿", "time": "13:30 | Check-in", "trans": "步行", "lat": 47.502, "lng": 19.083 },
+            {
+                "name": "瓦茨街 (Váci utca) 購物與晚餐",
+                "type": "逛街", "time": "16:00 | 3小時", "trans": "地鐵 M2/M4 或 2 號電車", "lat": 47.493, "lng": 19.052
+            }
         ]
     },
     {
         "day": 22,
         "date": "02/28 (六)",
-        "title": "柏林 | 冷戰圍牆與現代藝術",
-        "city": "Berlin",
-        "coordinates": [52.5055, 13.4395],
-        "summary": "走訪東邊畫廊 (柏林圍牆) 與查理檢查哨。",
-        "tickets": "無特殊門票，博物館需另購。",
-        "notes": "東邊畫廊是戶外區域，注意保暖。",
+        "title": "布達佩斯 | 英雄廣場與城市公園",
+        "city": "Budapest",
+        "coordinates": [47.513, 19.077],
+        "summary": "參觀英雄廣場與城市公園 (Városliget) 內的沃伊達奇城堡。",
+        "tickets": "無特殊門票。",
+        "notes": "城市公園內的城堡在冬季風景也很好。週六人潮較多，適合戶外活動。",
         "spots": [
-            { "name": "東邊畫廊 (East Side Gallery)", "type": "景點", "time": "10:00 | 1.5小時", "trans": "S-Bahn Ostbahnhof", "lat": 52.5055, "lng": 13.4395 },
-            { "name": "查理檢查哨", "type": "景點", "time": "13:00 | 1小時", "trans": "U6 Kochstr.", "lat": 52.5074, "lng": 13.3904 },
-            { "name": "波茲坦廣場", "type": "景點", "time": "15:30 | 1.5小時", "trans": "U2/S-Bahn", "lat": 52.5096, "lng": 13.3759 }
+            {
+                "name": "英雄廣場",
+                "type": "景點", "time": "10:00 | 1小時", "trans": "地鐵 M1 至 Hősök tere", "lat": 47.513, "lng": 19.077,
+                "details": { "open": "全天", "price": "免費" }
+            },
+            {
+                "name": "沃伊達奇城堡 (Vajdahunyad Castle)",
+                "type": "景點", "time": "11:30 | 2小時", "trans": "步行穿越城市公園", "lat": 47.514, "lng": 19.085,
+                "details": { "open": "10:00 - 17:00", "price": "免費 (庭院)" }
+            },
+            {
+                "name": "多瑙河遊船 (夕陽或夜景)",
+                "type": "體驗", "time": "17:30 | 1小時", "trans": "2 號電車至河岸碼頭", "lat": 47.496, "lng": 19.049,
+                "details": { "open": "依船公司時間", "price": "約 5500 HUF" }
+            }
         ]
     },
     {
         "day": 23,
         "date": "03/01 (日)",
-        "title": "柏林 | 購物與最後巡禮",
-        "city": "Berlin",
-        "coordinates": [52.5036, 13.3353],
-        "summary": "選購庫達姆大道精品或紀念品，準備返程。",
-        "tickets": "交通票。",
-        "notes": "週日商店大多休息！建議安排跳蚤市場 (如 Mauerpark) 或純觀光。",
+        "title": "布達佩斯 | 最後巡禮與採購",
+        "city": "Budapest",
+        "coordinates": [47.505, 19.05],
+        "summary": "利用週日商店關閉，專注於戶外藝術與免費景點。購買機場快線車票。",
+        "tickets": "購買 100E 機場快線車票。",
+        "notes": "週日商店大多休息，可安排博物館或戶外廣場。",
         "spots": [
-            { "name": "Mauerpark 跳蚤市場", "type": "體驗", "time": "10:00 | 3小時", "trans": "U2 Eberswalder Str.", "lat": 52.5435, "lng": 13.4024 },
-            { "name": "夏洛滕堡宮", "type": "景點", "time": "14:30 | 2小時", "trans": "Bus M45", "lat": 52.5208, "lng": 13.2956 }
+            {
+                "name": "聖伊什特萬聖殿 (St. Stephen's Basilica)",
+                "type": "景點", "time": "10:00 | 1.5小時", "trans": "地鐵 M1/M2/M3", "lat": 47.5, "lng": 19.054,
+                "details": { "open": "09:00 - 17:00", "price": "約 1000 HUF (捐獻)" }
+            },
+            {
+                "name": "鞋子 (Shoes on the Danube Bank) 紀念碑",
+                "type": "景點", "time": "12:00 | 0.5小時", "trans": "步行至多瑙河岸", "lat": 47.505, "lng": 19.045,
+                "details": { "open": "全天", "price": "免費" }
+            },
+            {
+                "name": "採購與行李整理",
+                "type": "逛街", "time": "14:00 | 3小時", "trans": "步行/市區交通", "lat": 47.502, "lng": 19.083
+            }
         ]
     },
     {
         "day": 24,
         "date": "03/02 (一)",
-        "title": "返程 | 柏林機場",
-        "city": "Berlin",
-        "coordinates": [52.3667, 13.5033],
-        "summary": "前往柏林布蘭登堡機場 (BER)，結束美好旅程。",
-        "tickets": "ABC 區車票 (含機場)。",
-        "notes": "請提早 3 小時抵達機場辦理退稅與登機。",
+        "title": "返程 | 布達佩斯機場",
+        "city": "Budapest",
+        "coordinates": [47.437, 19.255],
+        "summary": "搭乘機場快線巴士前往布達佩斯李斯特·費倫茨國際機場 (BUD)，結束行程。",
+        "tickets": "100E 機場快線車票。",
+        "notes": "提早 3 小時抵達機場辦理登機和退稅。",
         "spots": [
-            { "name": "柏林市區 -> 機場", "type": "交通", "time": "09:00 | 45分", "trans": "FEX 機場快線或 S9", "lat": 52.5200, "lng": 13.4050 },
-            { "name": "柏林布蘭登堡機場 (BER)", "type": "搭機", "time": "13:00 | 飛離", "trans": "-", "lat": 52.3667, "lng": 13.5033 }
+            {
+                "name": "市區 -> 布達佩斯機場",
+                "type": "交通", "time": "09:00 | 40分", "trans": "100E 巴士 (從 Deák Ferenc tér 發車)", "lat": 47.5, "lng": 19.05
+            },
+            {
+                "name": "布達佩斯李斯特·費倫茨國際機場 (BUD)",
+                "type": "搭機", "time": "13:00 | 飛離", "trans": "-", "lat": 47.437, "lng": 19.255
+            }
         ]
     }
 ]
