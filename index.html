@@ -36,6 +36,27 @@
     <script type="text/babel">
         const { useState, useEffect, useRef, useMemo } = React;
 
+        // ====================================================================
+        // 【1. 重要的 API 金鑰設定】
+        // 已填入您的金鑰。
+        // ====================================================================
+        const GOOGLE_MAPS_API_KEY = "AIzaSyDaUDrPGnbSFpbjjDY1uCojdKbhtNNbhhQ"; 
+
+        // ====================================================================
+        // 【2. 新增：圖片 URL 生成函數 (Google Places Photo API)】
+        // 根據 photo_reference 產生 Google Place Photo 的圖片 URL
+        // ====================================================================
+        const getPlacePhotoUrl = (photoReference, maxWidth = 600) => {
+            // 如果沒有 Photo Reference 或 Key 不存在，則不產生 URL
+            if (!photoReference || GOOGLE_MAPS_API_KEY.startsWith("AIzaSyD-")) return null;
+            
+            const baseUrl = "https://maps.googleapis.com/maps/api/place/photo";
+            
+            const url = `${baseUrl}?maxwidth=${maxWidth}&photoreference=${photoReference}&key=${GOOGLE_MAPS_API_KEY}`;
+            
+            return url;
+        };
+
         // --- Helper Functions ---
         const getCategoryColor = (type) => {
             if (['交通', '返回', '搭機', '移動'].some(k => type.includes(k))) return 'bg-gray-500';
@@ -91,7 +112,7 @@
             );
         };
 
-        // 1. Map Component
+        // 1. Map Component (地圖部分邏輯)
         const MapComponent = ({ activeSpot, activeDay, fullItinerary, onCityClick, onSpotMarkerClick }) => {
             const mapRef = useRef(null);
             const mapInstance = useRef(null);
@@ -186,7 +207,7 @@
                     if (bounds.isValid()) {
                         const targetCenter = bounds.getCenter();
                         const targetZoom = map.getBoundsZoom(bounds) - 0.5;
-                        map.fitBounds(bounds, { padding: [50, 50] }); // Use fitBounds for initial full view
+                        map.fitBounds(bounds, { padding: [50, 50] }); 
                     }
                 }
             }, [activeDay, activeSpot, fullItinerary]);
@@ -198,7 +219,7 @@
             );
         };
 
-        // 2. Sidebar Item (Day Card)
+        // 2. Sidebar Item (Day Card - 新增圖片顯示)
         const DayCard = ({ data, isActive, onClick, onSpotClick, activeSpot }) => {
             return (
                 <div id={`day-${data.day}`} className={`border-b border-gray-200 transition-all duration-300 ${isActive ? 'bg-white shadow-lg' : 'bg-white hover:bg-gray-50'}`}>
@@ -220,11 +241,23 @@
                                     {data.spots.map((spot, idx) => {
                                         const colorClass = getCategoryColor(spot.type);
                                         const isSpotActive = activeSpot && activeSpot.name === spot.name;
+                                        const photoUrl = getPlacePhotoUrl(spot.photo_reference); // <-- 取得圖片 URL
+
                                         return (
                                         <div key={idx} className={`relative group transition-all duration-300 rounded-lg cursor-pointer ${isSpotActive ? 'bg-blue-50 -mx-2 px-2 py-2 shadow-sm ring-1 ring-blue-100' : 'hover:bg-gray-100'}`} onClick={() => onSpotClick(spot)}>
                                             <div className={`absolute ${isSpotActive ? 'left-[0px]' : '-left-[35px]'} top-2 h-8 w-8 rounded-full ${colorClass} border-2 border-white text-white flex items-center justify-center text-sm font-bold shadow-sm z-10 transition-all duration-300`}>{idx + 1}</div>
                                             <div className={`flex justify-between items-start transition-all duration-300 ${isSpotActive ? 'pl-10' : ''}`}>
                                                 <div className="flex-1">
+                                                     {/* 【新增：圖片顯示區 - 每日行程】 */}
+                                                    {isSpotActive && photoUrl && (
+                                                        <img 
+                                                            src={photoUrl} 
+                                                            alt={spot.name} 
+                                                            className="w-full h-auto object-cover rounded-lg mb-3 shadow-md border border-gray-200" 
+                                                            style={{maxHeight: '200px'}}
+                                                            onError={(e) => { e.target.onerror = null; e.target.src="https://via.placeholder.com/600x200?text=Image+Unavailable"; }} // 錯誤處理
+                                                        />
+                                                    )}
                                                     <h4 className={`font-bold text-base transition-colors duration-300 ${isSpotActive ? 'text-blue-800' : 'text-gray-800'}`}>{data.city} | {spot.name}</h4>
                                                     <div className="flex flex-col mt-1 space-y-1">
                                                          <span className="text-xs inline-flex items-center text-gray-500 bg-gray-100 px-2 py-0.5 rounded w-fit"><i className="fas fa-clock mr-1.5 w-3"></i> {spot.time}</span>
@@ -257,7 +290,7 @@
             );
         };
 
-        // 3. Search Component
+        // 3. Search Component (新增圖片顯示)
         const SearchTab = ({ data, onSpotClick, activeSpot }) => {
             const [searchTerm, setSearchTerm] = useState("");
             const allSpots = useMemo(() => {
@@ -278,8 +311,20 @@
                         {filteredSpots.map((spot, idx) => {
                             const isSpotActive = activeSpot && activeSpot.name === spot.name;
                             const rating = spot.type === '景點' ? '🔥 必去' : '📍 一般';
+                            const photoUrl = getPlacePhotoUrl(spot.photo_reference, 400); // <-- 取得圖片 URL
+
                             return (
                             <div key={idx} className={`bg-white border rounded-lg p-3 cursor-pointer transition-all ${isSpotActive ? 'ring-2 ring-blue-500 shadow-md' : 'hover:shadow-md'}`} onClick={() => onSpotClick(spot)}>
+                                {/* 【新增：圖片顯示區 - 搜尋結果】 */}
+                                {isSpotActive && photoUrl && (
+                                    <img 
+                                        src={photoUrl} 
+                                        alt={spot.name} 
+                                        className="w-full h-auto object-cover rounded-lg mb-3 shadow-sm border border-gray-200" 
+                                        style={{maxHeight: '150px'}}
+                                        onError={(e) => { e.target.onerror = null; e.target.src="https://via.placeholder.com/400x150?text=Image+Unavailable"; }} // 錯誤處理
+                                    />
+                                )}
                                 <div className="flex justify-between items-center">
                                     <div className="flex-1">
                                         <div className="text-xs text-gray-500 mb-1"><span className="font-semibold text-blue-600">{spot.country}</span> · {spot.city} · Day {spot.day}</div>
@@ -315,7 +360,6 @@
 
             // Fetch Data with Cache Buster
             useEffect(() => {
-                // *** 這裡是修改的關鍵：加入了 ?v= (時間戳) 參數來避免瀏覽器快取 ***
                 const cacheBuster = new Date().getTime();
                 fetch(`./itinerary.json?v=${cacheBuster}`)
                     .then(response => {
